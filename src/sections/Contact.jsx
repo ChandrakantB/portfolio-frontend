@@ -14,6 +14,8 @@ const Contact = () => {
   const [status, setStatus] = useState('');
   const [loading, setLoading] = useState(false);
 
+  const apiBaseUrl = import.meta.env.VITE_API_URL;
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -24,11 +26,12 @@ const Contact = () => {
     setStatus('');
 
     try {
-      const res = await axios.post('http://localhost:5000/api/contact', formData);
-      setStatus(res.data.message || 'Message sent successfully!');
+      const res = await axios.post(`${apiBaseUrl}/api/contact`, formData);
+      setStatus(res.data.message || '✅ Message sent successfully!');
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
-      setStatus(error.response?.data?.error || 'Something went wrong.');
+      console.error('Error sending message:', error);
+      setStatus(error.response?.data?.error || '❌ Something went wrong. Please try again later.');
     } finally {
       setLoading(false);
     }
@@ -44,7 +47,6 @@ const Contact = () => {
           transition={{ duration: 0.5 }}
         >
           <span className="section-number">Contact</span>
-          {/* <span className="section-line"></span> */}
         </motion.h2>
 
         <motion.form
@@ -61,6 +63,7 @@ const Contact = () => {
             value={formData.name}
             onChange={handleChange}
             required
+            aria-label="Your Name"
           />
 
           <input
@@ -70,6 +73,7 @@ const Contact = () => {
             value={formData.email}
             onChange={handleChange}
             required
+            aria-label="Your Email"
           />
 
           <textarea
@@ -79,6 +83,7 @@ const Contact = () => {
             value={formData.message}
             onChange={handleChange}
             required
+            aria-label="Your Message"
           ></textarea>
 
           <button type="submit" className="btn primary" disabled={loading}>
