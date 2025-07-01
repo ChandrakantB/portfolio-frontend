@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <p onClick={scrollToTop} className="footer-name">
-          © {new Date().getFullYear()} Shivam — Back to Top ↑
+          © {new Date().getFullYear()} Chandrakant — Back to Top ↑
         </p>
         <div className="footer-icons">
           <a
