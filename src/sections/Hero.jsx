@@ -15,7 +15,7 @@ const Hero = () => {
             transition={{ duration: 0.6 }}
             className="hero-title"
           >
-            <span className="gradient-name">Hi, I am Shivam.</span><br />
+            <span className="gradient-name">Hi, I am Chandrkant.</span><br />
             <span className="hero-typewriter">
               <Typewriter
                 words={['Full-Stack Developer', 'Creative Problem Solver', 'Tech Explorer']}

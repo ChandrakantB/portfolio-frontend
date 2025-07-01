@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="logo">
-          Shivam
+          Chandrakant
         </Link>
 
         <div className={`nav-links ${isOpen ? "open" : ""}`}>

@@ -24,7 +24,7 @@ const About = () => {
               transition={{ delay: 0.2 }}
             >
               <p>
-                Hey! I’m <strong>Shivam</strong>, a passionate full-stack web developer with a mission to craft clean, efficient, and delightful digital experiences. I specialize in building scalable web apps using modern JavaScript technologies.
+                Hey! I’m <strong>Chandrakant</strong>, a passionate full-stack web developer with a mission to craft clean, efficient, and delightful digital experiences. I specialize in building scalable web apps using modern JavaScript technologies.
               </p>
               <p>
                 I’ve worked on both startup projects and personal tools — blending great UX, high performance, and elegant design. I’m constantly learning and enjoy solving real-world problems through code.
