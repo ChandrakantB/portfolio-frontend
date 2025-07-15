@@ -1,0 +1,61 @@
+.education-section {
+  background-color: #202c44;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 20px;
+  border-left: 3px solid #5cc6ff;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  background-color: #5cc6ff;
+  border-radius: 50%;
+  position: absolute;
+  left: -7px;
+  top: 6px;
+}
+
+.timeline-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.timeline-content p {
+  font-size: 0.95rem;
+  margin: 4px 0;
+  color: #d1d1d1;
+}
+
+.timeline-duration {
+  font-style: italic;
+  font-weight: 500;
+  color: #9ad3ff;
+}
+
+.timeline-extra {
+  font-size: 0.9rem;
+  color: #a7c8e7;
+}

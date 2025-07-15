@@ -9,7 +9,7 @@
   width: 100%;
   position: fixed;
   top: 0;
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(0, 0, 0, 0.85);
   backdrop-filter: blur(10px);
   z-index: 1000;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -28,7 +28,7 @@
 .logo {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #222;
+  color: #ffadad;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   transition: color 0.3s ease;
@@ -46,7 +46,7 @@
 
 .nav-links a {
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
   font-weight: 500;
   font-size: 1rem;
   position: relative;

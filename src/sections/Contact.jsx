@@ -55,7 +55,7 @@ const Contact = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-        >
+        ><p>Feel free to mail me on <strong> chandrakantbanait11@gmail.com </strong> to discuss about collaborations or future opportunities & projects or even just to talk. 😊</p>
           <input
             type="text"
             name="name"

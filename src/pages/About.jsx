@@ -47,7 +47,7 @@ const About = () => {
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
             >
-              <h3>Tech Stack</h3>
+              {/* <h3>Tech Stack</h3>
               <ul className="skills-list">
                 <li>⚛️ React</li>
                 <li>🟨 JavaScript (ES6+)</li>
@@ -57,7 +57,7 @@ const About = () => {
                 <li>🎨 CSS / Tailwind</li>
                 <li>🔧 Git & GitHub</li>
                 <li>🧪 Testing Basics</li>
-              </ul>
+              </ul> */}
             </motion.div>
           </div>
         </div>

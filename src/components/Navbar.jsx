@@ -2,12 +2,12 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import useActiveSection from "../hooks/useActiveSection";
-import { useTheme } from "../components/themeContext";
+// import { useTheme } from "../components/themeContext";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const active = useActiveSection(["about", "projects", "contact"]);
-  const { darkMode, toggleTheme } = useTheme();
+  // const { darkMode, toggleTheme } = useTheme();
 
   return (
     <nav className="navbar">
@@ -47,13 +47,7 @@ const Navbar = () => {
             Resume
           </a>
 
-          <button
-            onClick={toggleTheme}
-            aria-label="Toggle Theme"
-            className="theme-toggle"
-          >
-            {darkMode ? "🌞" : "🌙"}
-          </button>
+          
         </div>
 
         <button

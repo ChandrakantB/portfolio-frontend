@@ -1,6 +1,6 @@
 .about-section {
   padding: 100px 24px;
-  background: #ffffff;
+  background: #202c44;
 }
 
 .about-content {
@@ -11,7 +11,7 @@
 .section-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #1f2937;
+  color: #ffffff;
   text-align: center;
   margin-bottom: 48px;
 }
@@ -24,7 +24,7 @@
 
 .about-text p {
   font-size: 1.05rem;
-  color: #4b5563;
+  color: #f5f9ff;
   margin-bottom: 18px;
   line-height: 1.7;
 }
@@ -32,7 +32,7 @@
 .about-skills h3 {
   font-size: 1.25rem;
   margin-bottom: 16px;
-  color: #1f2937;
+  color: #9efff7;
 }
 
 .skills-list {
