@@ -8,7 +8,7 @@
 
 /* Theme Variables */
 :root {
-  --bg-color: #ffffff;
+  --bg-color:#202c44;
   --text-color: #111827;
   --heading-color: #1f2937;
   --btn-primary: #3b82f6;
@@ -31,11 +31,11 @@
 
 /* Global Body Styles */
 body {
-  background: var(--bg-color);
+  background: #202c44;
   color: var(--text-color);
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
-  transition: background 0.3s ease, color 0.3s ease;
+  /* transition: background 0.3s ease, color 0.3s ease; */
 }
 
 /* Headings */
