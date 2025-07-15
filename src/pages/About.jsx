@@ -24,14 +24,21 @@ const About = () => {
               transition={{ delay: 0.2 }}
             >
               <p>
-                Hey! I’m <strong>Chandrakant</strong>, a passionate full-stack web developer with a mission to craft clean, efficient, and delightful digital experiences. I specialize in building scalable web apps using modern JavaScript technologies.
-              </p>
-              <p>
-                I’ve worked on both startup projects and personal tools — blending great UX, high performance, and elegant design. I’m constantly learning and enjoy solving real-world problems through code.
-              </p>
-              <p>
-                Right now, I’m diving deeper into advanced system design and contributing to meaningful projects that impact real users.
-              </p>
+  I'm a full-stack web developer who thrives on building meaningful, real-world solutions. I’ve created and deployed my own portfolio site to showcase my work and skills — but that’s just the beginning.
+</p>
+
+<p>
+  I’m currently building <strong>BusSure</strong>, a scalable bus booking platform designed to connect not just cities, but even the most remote villages — bringing accessibility where it’s needed most. Alongside that, I’m developing a unique <strong>mechanic locator app</strong> that helps people find nearby help instantly when stranded on the road.
+</p>
+
+<p>
+  My passion lies in crafting responsive UIs, scalable backends, and user-friendly experiences. I enjoy building full-stack projects from the ground up, whether it’s an admin dashboard, dynamic seat selection systems, or real-time service apps.
+</p>
+
+<p>
+  Beyond development, I actively solve coding problems and have completed over <strong>200 challenges</strong> on platforms like LeetCode and GeeksforGeeks. I'm also exploring advanced system design and backend scalability to prepare myself for production-grade systems and high-performance APIs.
+</p>
+
             </motion.div>
 
             <motion.div
