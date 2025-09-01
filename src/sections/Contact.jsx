@@ -14,7 +14,8 @@ const Contact = () => {
   const [status, setStatus] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const apiBaseUrl = import.meta.env.VITE_API_URL;
+  // ✅ Use your Render backend directly
+  const apiBaseUrl = "https://portfolio-backend-xlar.onrender.com";
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -26,12 +27,17 @@ const Contact = () => {
     setStatus('');
 
     try {
-      const res = await axios.post(`${apiBaseUrl}/api/contact`, formData);
+      const res = await axios.post(`${apiBaseUrl}/api/contact`, formData, {
+        headers: { "Content-Type": "application/json" }
+      });
       setStatus(res.data.message || '✅ Message sent successfully!');
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
       console.error('Error sending message:', error);
-      setStatus(error.response?.data?.error || '❌ Something went wrong. Please try again later.');
+      setStatus(
+        error.response?.data?.error ||
+        '❌ Something went wrong. Please try again later.'
+      );
     } finally {
       setLoading(false);
     }
@@ -55,7 +61,12 @@ const Contact = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-        ><p>Feel free to mail me on <strong> chandrakantbanait11@gmail.com </strong> to discuss about collaborations or future opportunities & projects or even just to talk. 😊</p>
+        >
+          <p>
+            Feel free to mail me on <strong>chandrakantbanait11@gmail.com</strong> 
+            to discuss collaborations, future opportunities, or just to talk. 😊
+          </p>
+
           <input
             type="text"
             name="name"
